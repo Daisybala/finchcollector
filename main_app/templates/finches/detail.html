@@ -15,6 +15,8 @@
             <p>Age: Birdy</p>
         {% endif %}
     </div>
+        <a href="{% url 'finches_update' finch.id %}">Edit</a>
+        <a href="{% url 'finches_delete' finch.id %}">Delete</a>
 </div>
 
 {% endblock %}
